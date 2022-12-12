@@ -1,0 +1,9 @@
+[Unit]
+Description=Service qui télécharge des vidéos youtube a ta place
+
+[Service]
+ExecStart=/bin/bash /srv/yt/yt-v2.sh
+User=yt
+
+[Install]
+WantedBy=multi-user.target
